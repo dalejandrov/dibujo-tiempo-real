@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <canvas id="canvas"></canvas>
+        <div class="colors">
+            <button id="color1" onclick="changeColor('red')"></button>
+            <button id="color2" onclick="changeColor('yellowgreen')"></button>
+            <button id="color3" onclick="changeColor('blue')"></button>
+            <button id="color4" onclick="changeColor('yellow')"></button>
+            <button id="color5" onclick="changeColor('black')"></button>
+        </div>
+        <div class="delete">
+            <button id="btnDelete" onclick="deleteAll()">❌</button>
+        </div>
+        <div id="users">
+            Numero de ususarios conectados: 0
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
